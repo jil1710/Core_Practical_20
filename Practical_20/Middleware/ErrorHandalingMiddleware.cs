@@ -17,10 +17,7 @@ namespace Practical_20.Middleware
 		{
 			await _next(httpContext);
 
-			if (httpContext.Response.StatusCode == (int)HttpStatusCode.NotFound && !httpContext.Response.HasStarted && httpContext.Request.Path.StartsWithSegments("/Error"))
-			{
-				httpContext.Response.Redirect("/Error/NotFoundEx");
-			}
+			
 
 
 			if (httpContext.Response.StatusCode == (int)HttpStatusCode.NotFound && !httpContext.Response.HasStarted && !httpContext.Request.Path.StartsWithSegments("/Error"))
