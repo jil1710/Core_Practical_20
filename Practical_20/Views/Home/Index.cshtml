@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+<div>
+
+    <h4>Crud Using Generic Repository (Unit Of Work Pattern)</h4>
+
+    <hr />
+    <a asp-action="Index" asp-controller="Student" class="btn btn-dark"> Students</a>
+
+    <a asp-action="Index" asp-controller="User" class="btn btn-secondary"> User</a>
+
+</div>
+
+<br />
+
+
+<div class="">
+    <h4>Global Error Handling With Global Middleware</h4>
+    <hr />
+    <a class="btn btn-secondary" asp-action="InternalServerErrorEx" asp-controller="Home"> Internal Sever Error Example</a>
+    <a class="btn btn-primary" asp-action="BadRequestEx" asp-controller="Home">BadRequest Example</a>
+    <a class="btn btn-success" asp-action="NotFoundExample" asp-controller="Home">Not Found Example</a>
+    <a class="btn btn-danger" asp-action="UnAuthorizeError" asp-controller="Home">Authorization Error</a>
+    <a class="btn btn-warning" asp-action="LoopEx" asp-controller="Home"> Loop Example </a>
+    <a class="btn btn-info" asp-action="AmbiguityExample" asp-controller="Home">Ambiguous Example</a>
+
+</div>
